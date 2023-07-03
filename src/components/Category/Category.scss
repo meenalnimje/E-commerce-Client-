@@ -1,0 +1,20 @@
+.category {
+    // border: 2px solid red;
+    margin-top: 20px;
+
+    .content_category {
+        background-image: url("../../assests/category.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        aspect-ratio: 16/9;
+        width: 400px;
+        font-size: 18px;
+        box-shadow: 0 5px 10px gray;
+        border-radius: 5px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,97 @@
+.cart {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // border: 1px solid red;
+    z-index: 999;
+    display: flex;
+    justify-content: flex-end;
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        background-color: rgba($color: #000000, $alpha: 0.5);
+        width: 100%;
+        height: 100%;
+        left: 0;
+    }
+
+    .cart-content {
+        height: 100vh;
+        width: 320px;
+        position: relative;
+        // z-index: 1;
+        z-index: 1000;
+        background-color: white;
+        animation: cardSlider 0.3s ease-in forwards;
+        transform: translateX(100%);
+
+        .header {
+            display: flex;
+            height: 60px;
+            // border: 2px solid red;
+            flex-direction: row-reverse;
+            align-items: center;
+            padding-right: 20px;
+            border: 1px solid rgba($color: #000000, $alpha: 0.5);
+
+            h3 {
+                margin-right: 80px;
+                // border: 2px solid red;
+            }
+
+            .cart-container {}
+
+            .close-btn {
+                // border: 2px solid red;
+                transform: scale(1);
+                transition: all 0.3s ease;
+                cursor: pointer;
+
+                &:hover {
+                    transform: scale(1.5);
+                }
+            }
+        }
+
+        .checkout-info {
+            margin-top: 40px;
+
+            .total-amount {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                h3 {
+                    margin-inline: 10px;
+                    font-size: 24px;
+                }
+            }
+
+            .checkout-btn {
+                margin-top: 16px;
+                border: 2px solid rgb(75, 35, 185);
+                background-color: rgb(75, 35, 185);
+                padding: 12px 8px;
+                text-align: center;
+                font-size: 18px;
+                border-radius: 5px;
+                color: #fff;
+                margin-inline: 10px;
+            }
+        }
+    }
+}
+
+@keyframes cardSlider {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+
+        transform: translateX(0%);
+    }
+}

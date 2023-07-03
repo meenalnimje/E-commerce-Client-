@@ -1,0 +1,222 @@
+.product-detail {
+    // border: 2px solid red;
+    width: 100vw;
+    height: 100vh;
+
+    .product-content {
+        width: 100%;
+        height: 100%;
+
+        .left-side {
+            // border: 2px solid firebrick;
+            position: absolute;
+            top: 20%;
+            left: 15%;
+
+            img {
+                width: 400px;
+                height: 500px;
+                border-radius: 5px;
+                background-position: center;
+                background-size: cover;
+                // height: 400px;
+            }
+        }
+
+        .right-side {
+            position: absolute;
+            top: 23%;
+            left: 43%;
+            width: 40%;
+            margin-left: 30px;
+            display: flex;
+            flex-direction: column;
+            // justify-content: space-between;
+            // border: 2px solid teal;
+            height: 450px;
+            padding: 4px;
+
+            .title {
+                font-size: 36px;
+                margin-bottom: 20px;
+
+            }
+
+            .description {
+                font-size: 18px;
+                color: rgba($color: #000000, $alpha: 0.5);
+            }
+
+            .price {
+                font-size: 24px;
+                margin-top: 30px;
+            }
+
+            .quantity-box {
+                margin-top: 30px;
+                // border: 2px solid rgb(75, 35, 185);
+                width: 130px;
+                height: 40px;
+                margin-bottom: 30px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                span {
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgb(75, 35, 185);
+                    color: white;
+                    font-size: 20px;
+                }
+
+                .add {
+                    border-top-right-radius: 5px;
+                    border-bottom-right-radius: 5px;
+                    border: 1px solid rgb(75, 35, 185);
+                    font-weight: bold;
+                    cursor: pointer;
+                }
+
+                .remove {
+                    border-top-left-radius: 5px;
+                    border-bottom-left-radius: 5px;
+                    border: 1px solid rgb(75, 35, 185);
+                    font-weight: bold;
+                    cursor: pointer;
+                }
+
+                .quantity {
+                    background-color: #fff;
+                    border: 1px solid rgb(75, 35, 185);
+                    color: black;
+                }
+            }
+
+            .add-to-cart {
+                height: 40px;
+                background-color: rgb(255, 173, 79);
+                border-radius: 5px;
+                margin-bottom: 20px;
+                font-size: 16px;
+                border: none;
+
+                &:hover {
+                    background-color: rgb(238, 150, 50);
+                    box-shadow: 0px 2px 5px rgb(249, 182, 106);
+                }
+            }
+
+            .policy-content {
+                .policies {
+                    font-size: 18px;
+                    color: rgba($color: #000000, $alpha: 0.5);
+                    margin-bottom: 10px;
+                }
+
+                .policy-item {
+                    // list-style-type: none;
+                    padding: 5px;
+                    color: rgba($color: #000000, $alpha: 0.5);
+                }
+            }
+        }
+    }
+}
+
+.loader {
+    color: rgb(75, 35, 185);
+    font-size: 90px;
+    text-indent: -9999em;
+    overflow: hidden;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    margin: 72px auto;
+    position: relative;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+    animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+}
+
+@-webkit-keyframes load6 {
+    0% {
+        box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+
+    5%,
+    95% {
+        box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+
+    10%,
+    59% {
+        box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+    }
+
+    20% {
+        box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+    }
+
+    38% {
+        box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+    }
+
+    100% {
+        box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+}
+
+@keyframes load6 {
+    0% {
+        box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+
+    5%,
+    95% {
+        box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+
+    10%,
+    59% {
+        box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+    }
+
+    20% {
+        box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+    }
+
+    38% {
+        box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+    }
+
+    100% {
+        box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+}
+
+@-webkit-keyframes round {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes round {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}

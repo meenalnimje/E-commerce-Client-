@@ -1,0 +1,83 @@
+.container {
+    background-color: black;
+    height: 70px;
+    position: sticky;
+    opacity: 0.8;
+    top: 0;
+    z-index: 99;
+
+    .navbar {
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+        .left-side {
+            margin-left: 100px;
+
+            .selling-items {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                list-style-type: none;
+
+                .items {
+                    // border: 2px solid red;
+                    padding: 4px;
+                    margin-right: 20px;
+
+                    .link {
+                        text-decoration: none;
+                        font-size: 18px;
+                        color: white;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+
+        .middle-side {
+            // border: 2px solid red;
+            position: absolute;
+            right: 47%;
+            padding: 12px;
+            cursor: pointer;
+
+            .title {
+                color: white;
+                font-size: 30px;
+                text-decoration: none;
+            }
+        }
+
+        .right-side {
+            position: absolute;
+            left: 85%;
+
+            .cart-icon {
+                color: white;
+                position: absolute;
+                cursor: pointer;
+                font-size: 30px;
+            }
+
+            .cart-count {
+                position: relative;
+                top: -15px;
+                right: -22px;
+                color: white;
+                font-size: 20px;
+                border: 2px solid rgb(75, 35, 185);
+                background-color: rgb(75, 35, 185);
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 18px;
+                padding: 1px;
+                width: 18px;
+            }
+        }
+    }
+}
